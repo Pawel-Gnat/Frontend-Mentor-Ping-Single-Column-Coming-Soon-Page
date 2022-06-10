@@ -24,8 +24,14 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 ## My process
 
-I managed to complete this challenge in 5 hours.
-
+Below is my thinking process of Java Script code:
+1. Created consts
+2. Created a function that shows errors on a website
+3. Created a function that set my website to default mode (clears error)
+4. Created a function that validate my email input (regexp + .test)
+5. Created a function that checks if my input is empty (show errors if it is)
+6. Created a function that clear my input field and console log my email if I submit correct data
+7. Created event on a button
 ### Built with
 
 - Semantic HTML5 markup
