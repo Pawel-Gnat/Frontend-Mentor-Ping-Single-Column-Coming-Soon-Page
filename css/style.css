@@ -16,13 +16,7 @@
 body {
 	font-family: 'Libre Franklin', sans-serif;
 	font-size: 1.25rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	text-align: center;
-	/* min-height: 100vh; */
-	/* max-width: max-content; */
-	/* margin: auto; */
 }
 
 main {
@@ -31,7 +25,7 @@ main {
 
 .logo {
 	width: 60px;
-	margin-top: 4em;
+	margin-top: 2em;
 }
 
 h1 {
@@ -46,30 +40,56 @@ h1 span {
 	color: var(--very-dark-blue);
 }
 
-main p {
+.sub_info {
 	font-size: 0.7em;
 	margin: 1em 0 1.5em;
 }
 
-.subscription_container {
+form {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	gap: 0.5em;
+	height: 140px;
+	width: auto;
 }
 
-input {
+.validation {
+	display: flex;
+	flex-direction: column;
+}
+
+.validation_info {
+	display: none;
+	font-size: 0.7rem;
+	font-style: italic;
+	color: var(--light-red);
+	margin: 0 0 2em;
+}
+
+.validation_error {
+	display: block;
+}
+
+.email_input {
 	width: 270px;
 	height: 40px;
 	border: 1px solid var(--pale-blue);
 	outline: var(--pale-blue);
 	border-radius: 30px;
 	padding-left: 2em;
+}
+
+.input_error {
+	border: 1px solid var(--light-red);
+	outline: var(--light-red);
+}
+
+.email_input::placeholder {
 	color: var(--pale-blue);
 }
 
-button {
+.button_form {
 	font-weight: 600;
 	width: 270px;
 	height: 40px;
@@ -82,14 +102,14 @@ button {
 	cursor: pointer;
 }
 
-button:hover {
+.button_form:hover {
 	opacity: 0.8;
 }
 
 .dashboard {
 	max-width: 90%;
 	height: auto;
-	margin: 3em auto;
+	margin: 2em auto;
 }
 
 .social_media {
@@ -127,37 +147,42 @@ footer {
 }
 
 @media (min-width: 768px) {
-
 	.logo {
 		width: 100px;
 	}
-	
+
 	h1 {
-		font-size: 1.6em;	
+		font-size: 1.6em;
 	}
-	
+
 	main p {
 		font-size: 0.9em;
 	}
 
-	.subscription_container {
+	form {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		align-items: center;
+		align-items: start;
 	}
 
-	input {
+	.email_input {
 		width: 380px;
 		height: 45px;
 	}
 
-	button {
+	.validation_info {
+		margin-right: 13em;
+	}
+
+	.button_form {
 		width: 230px;
 		height: 45px;
+		top: 0;
 	}
 
 	.dashboard {
 		max-width: 70vh;
+		margin: 0 auto;
 	}
 }

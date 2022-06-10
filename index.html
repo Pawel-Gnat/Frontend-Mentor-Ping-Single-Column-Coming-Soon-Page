@@ -18,13 +18,15 @@
 	<main>
 		<img src="./images/logo.svg" alt="Company logo" class="logo">
 		<h1>We are launching <span>soon!</span></h1>
-		<p>Subscribe and get notified</p>
+		<p class="sub_info">Subscribe and get notified</p>
 
-		<div class="subscription_container">
-
-			<input type="email" placeholder="Your email address..." id="emailAddress">
-			<button>Notify Me</button>
-		</div>
+		<form>
+			<div class="validation">
+				<input class="email_input" type="email" placeholder="Your email address...">
+				<p class="validation_info">Please provide a valid email address</p>
+			</div>
+			<button class="button_form">Notify Me</button>
+		</form>
 
 		<img src="./images/illustration-dashboard.png" alt="Dashboard illustration" class="dashboard">
 
@@ -40,6 +42,7 @@
 		<p>Challenge by <a href="https://www.frontendmentor.io" target="_blank" rel="noopener">Frontend Mentor</a>.
 			Coded by <a href="https://github.com/Pawel-Gnat" target="_blank" rel="noopener">Paweł Gnat</a>.</p>
 	</footer>
+	<script src="./js/main.js"></script>
 </body>
 
 </html>
